@@ -383,7 +383,24 @@ img {
 }
  /* CLIENTS */
 
-
+ .clients{
+    padding-top: 94px;
+    padding-bottom: 94px;
+ }
+.clients-list{
+    display: flex;
+}
+.clients-link{
+    padding: 0;
+    margin: 0;
+}
+.clients-icons{
+    max-width: 170px;
+    max-height: 92px;
+}
+.clients-item:not(:last-child){
+    margin-right: 30px;
+}
 
 /* FOOTER */
 
