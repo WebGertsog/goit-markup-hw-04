@@ -5,6 +5,7 @@
     --main-text-color: #757575;
     --title-text-color: #212121;
     --accent-text-color: #2196F3;
+    --hover-btn-color: #188CE8;
     --contacts-text-color: rgba(255, 255, 255, 0.6);
     --bold-font: 700;
     --middle-font: 500;
@@ -163,9 +164,16 @@ img {
     letter-spacing: 0.06em;
     color: var(--main-bg-color);
     background-color: var(--accent-text-color);
-    border-color: transparent;
     border-style: none;
     border-radius: 4px;
+    }
+    .main-button:hover{
+        background-color: var(--hover-btn-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+    .main-button:focus{
+        background-color: var(--hover-btn-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
 
 /* SECTION  */
@@ -195,11 +203,11 @@ img {
     content: "";
     display: block;
     height: 120px;
+    margin-bottom: 30px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--second-bg-color);
-    /* background-size: contain; */
-}
+   }
 .icon-antenna::before{
     background: url(../images/svg/antenna1.svg);
 }
@@ -318,6 +326,7 @@ img {
 .buttons-filter:focus{
     color: var(--main-bg-color);
     background-color: var(--accent-text-color);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-buttons .filter-item + .filter-item{
@@ -328,8 +337,6 @@ img {
     text-decoration: none;
 }
 
-/* ----------------------------------------------------------------------------------- */
-/* products */
 .products{
     display: flex;
     flex-wrap: wrap;
@@ -337,12 +344,19 @@ img {
     margin-left: calc(-1 * var(--thirty-pixels));
 }
             /* LI */
-.products  .products-item{
+.products .products-item{
     background: var(--main-bg-color);
     flex-basis: calc(100% / 3 - var(--thirty-pixels));
     margin-top: var(--thirty-pixels);
     margin-left: var(--thirty-pixels);
 }
+.products .products-item:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.products .products-item:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .products-bottom-block{
     padding: 20px 24px;
     border-right: var(--bottom-border);
@@ -367,6 +381,8 @@ img {
     letter-spacing: 0.03em;
     color: var(--main-text-color);
 }
+ /* CLIENTS */
+
 
 
 /* FOOTER */
