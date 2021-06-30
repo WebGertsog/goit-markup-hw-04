@@ -209,16 +209,16 @@ img {
     background-color: var(--second-bg-color);
    }
 .icon-antenna::before{
-    background: url(../images/svg/antenna1.svg);
+    background: url(../images/svg/antenna.svg);
 }
 .icon-clock::before{
-    background: url(../images/svg/clock1.svg);
+    background: url(../images/svg/clock.svg);
 }
 .icon-diagram::before{
-    background: url(../images/svg/diagram1.svg);
+    background: url(../images/svg/diagram.svg);
 }
 .icon-astronaut::before{
-    background: url(../images/svg/astronaut1.svg);
+    background: url(../images/svg/astronaut.svg);
 }
 .qualities-list .qualities-tiltle{
     margin-top: 0;
@@ -391,8 +391,9 @@ img {
     display: flex;
 }
 .clients-link{
-    padding: 0;
-    margin: 0;
+   display: flex;
+   border: 1px solid #AFB1B8;
+   border-radius: 4px;
 }
 .clients-icons{
     max-width: 170px;
@@ -400,6 +401,9 @@ img {
 }
 .clients-item:not(:last-child){
     margin-right: 30px;
+}
+.clients-link:hover{
+    color: #2196F3;
 }
 
 /* FOOTER */
