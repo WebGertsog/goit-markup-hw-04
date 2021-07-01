@@ -216,27 +216,19 @@ img {
     margin-right: 30px;
 }
 
-.qualities-list .qualities-item::before{
-    content: "";
-    display: block;
-    height: 120px;
+.static-block{
     margin-bottom: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
+    width: 270px;
+    height: 120px;
     background-color: var(--second-bg-color);
-   }
-.icon-antenna::before{
-    background: url(../images/svg/antenna.svg);
+    border-radius: 4px;
 }
-.icon-clock::before{
-    background: url(../images/svg/clock.svg);
+.static-icons{
+    width: 70px;
+    height: 70px;
+    margin: 25px 100px;
 }
-.icon-diagram::before{
-    background: url(../images/svg/diagram.svg);
-}
-.icon-astronaut::before{
-    background: url(../images/svg/astronaut.svg);
-}
+
 .qualities-list .qualities-tiltle{
     margin-top: 0;
     margin-bottom: 10px;
@@ -316,18 +308,37 @@ img {
 /* ________________________________ */
 .team-icons-list{
     display: flex;
-    margin: 16px 32px 30px 32px;
-
+    justify-content: center;
+    margin: 16px 32px 0;
 }
+.team-icons-item{
+    display: flex;
+}
+.team-icons-item:not(:last-child){
+    margin-right: 10px;
+}
+
 .team-icons-link{
     display: flex;
-    width: 40px;
-    height: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    fill: var(--main-icons-color);
+}
+.team-icons-link:hover,
+.team-icons-link:focus{
+    border-radius: 50% 50%;
+    background-color: var(--accent-text-color);
+    fill: var(--main-bg-color);
+}
+.team-icons{
+    width: 20px;
+    height: 20px;
 }
 
-.team-icons-item:nth(4){
-    margin-right: 10px;
- }
+
+
 
         /* --PORTFOLIO-- */
 .portfolio{
@@ -448,6 +459,12 @@ img {
     padding-bottom: 60px;
     background-color: var(--accent-bg-color);
 }
+.main-footer{
+    display: flex;
+}
+.footer-address{
+    margin-right: 70px;
+}
 .footer-logo{
     display: inline-block;
     margin-bottom: 20px;
@@ -479,4 +496,51 @@ img {
 .footer-list .footer-contacts:hover,
 .footer-list .footer-contacts:focus{
     color: var(--accent-text-color);
+}
+
+.footer-socials{
+
+}
+
+.socials-text{
+    margin-bottom: 20px;
+    padding: 0;
+    font-weight: var(--bold-font);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-bg-color);
+}
+
+
+.socials-list{
+    display: flex;
+    justify-content: center;
+}
+.socials-item{
+    display: flex;
+}
+.socials-item:not(:last-child){
+    margin-right: 10px;
+}
+
+.socials-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50% 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--main-bg-color);
+}
+.socials-link:hover,
+.socials-link:focus{
+    border-radius: 50% 50%;
+    background-color: var(--accent-text-color);
+}
+.socials-icons{
+    width: 20px;
+    height: 20px;
 }
