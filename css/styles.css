@@ -293,7 +293,6 @@ img {
 .team-item .team-item-bottom{
     padding-top: 30px;
     padding-bottom: 30px;
-    
 }
 .team-title{
     margin-top: 0;
@@ -314,6 +313,21 @@ img {
     letter-spacing: 0.03em;
     color: var(--main-text-color);
 }
+/* ________________________________ */
+.team-icons-list{
+    display: flex;
+    margin: 16px 32px 30px 32px;
+
+}
+.team-icons-link{
+    display: flex;
+    width: 40px;
+    height: 40px;
+}
+
+.team-icons-item:nth(4){
+    margin-right: 10px;
+ }
 
         /* --PORTFOLIO-- */
 .portfolio{
