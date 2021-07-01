@@ -408,7 +408,7 @@ img {
     display: flex;
 }
 .clients-link{
-   display: block;
+   display: flex;
    max-width: 170px;
    max-height: 92px;
    border: 1px solid var(--main-icons-color);
@@ -419,10 +419,10 @@ img {
 .clients-item:not(:last-child){
     margin-right: 30px;
 }
-/* .clients-icons:hover,
+.clients-icons:hover,
 .clients-icons:focus{
     fill: var(--accent-text-color);
-} */
+}
 .clients-link:hover{
     border: 1px solid var(--accent-text-color);
 }
